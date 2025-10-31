@@ -1,0 +1,17 @@
+networks:
+  lan:
+
+services:
+  corazon_amigo:
+    image: node:22-alpine
+    container_name: corazon_amigo
+    working_dir: /app
+    command: ["npm", "run", "dev"]
+    environment:
+      NODE_ENV: development
+    networks:
+      - lan
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app

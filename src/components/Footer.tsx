@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-fuchsia-500 rounded-full flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-bold">Corazón Amigo</span>
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="bg-gray-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300"
+                className="bg-gray-700 hover:bg-pink-600 p-3 rounded-full transition-colors duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Contacto</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-pink-400 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">
                     Agüero 2476<br />
@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-orange-400 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-pink-400 flex-shrink-0" />
                 <p className="text-gray-300">+54 9 11 2253-1240</p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Horarios</h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
-                <Clock className="w-5 h-5 text-orange-400 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-pink-400 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300 text-sm">
                     <strong>Lun - Vie:</strong> 8:00 - 18:00<br />
