@@ -130,7 +130,7 @@ const Donations = () => {
         </div>
 
         {/* Contact for donations */}
-        <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-pink-600 to-fuchsia-600 rounded-2xl p-8 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">
             ¿Querés hacer una donación?
           </h3>
@@ -143,7 +143,7 @@ const Donations = () => {
               href="https://wa.me/5491122531240?text=Hola! Me gustaría hacer una donación a Corazón Amigo"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300"
+              className="inline-block bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300"
             >
               Donar Alimentos o Ropa
             </a>

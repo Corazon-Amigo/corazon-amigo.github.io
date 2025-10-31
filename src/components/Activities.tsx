@@ -66,7 +66,7 @@ const Activities = () => {
                   alt={activity.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-orange-500 to-red-500 text-white p-3 rounded-full">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-fuchsia-500 text-white p-3 rounded-full">
                   {activity.icon}
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Activities = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-pink-500 to-fuchsia-500 rounded-2xl p-8 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               ¿Querés ser parte de esta hermosa misión?
             </h3>
@@ -97,7 +97,7 @@ const Activities = () => {
               href="https://wa.me/5491122531240?text=Hola! Me interesa colaborar con Corazón Amigo"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300"
+              className="inline-block bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300"
             >
               ¡Contactanos por WhatsApp!
             </a>
