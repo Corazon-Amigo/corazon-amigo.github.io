@@ -40,34 +40,45 @@ npm run build
 npm run preview
 ```
 
+Se puede trabajar en un entorno de desarrollo aislado utilizando `docker compose`:
+
+```bash
+# Crear el servicio (por unica vez)
+docker compose up --no-start
+
+# Instalar las dependencias
+docker compose run corazon_amigo npm install
+
+# Ejecutar en modo desarrollo
+docker compose up -d
+
+# Verificar el estado
+docker compose ps
+
+# Construir para producción
+docker compose run corazon_amigo npm run build
+
+# Vista previa de la build
+docker compose run corazon_amigo npm run preview
+
+# Detener el servicio
+docker compose stop
+
+# Eliminar el servicio (cuando ya no se necesite mas)
+docker compose down
+```
+
 ## 🌐 Despliegue Automático
 
-Este proyecto está configurado con GitHub Actions para despliegue automático a Netlify.
+Este proyecto está configurado con GitHub Actions para despliegue automático en Github Pages.
 
-### Configuración de Secrets
+### Configuración
 
-Para que el despliegue automático funcione, necesitas configurar los siguientes secrets en tu repositorio de GitHub:
-
-1. Ve a tu repositorio en GitHub
-2. Navega a Settings > Secrets and variables > Actions
-3. Agrega los siguientes secrets:
-
-#### `NETLIFY_AUTH_TOKEN`
-1. Ve a [Netlify](https://app.netlify.com/)
-2. Inicia sesión en tu cuenta
-3. Ve a User settings > Applications > Personal access tokens
-4. Genera un nuevo token y cópialo
-
-#### `NETLIFY_SITE_ID`
-1. Ve a tu sitio en Netlify
-2. En Site settings > General > Site details
-3. Copia el "Site ID"
+Ver el archivo `.github/workflows/deploy.yml`.
 
 ### Flujo de Despliegue
 
-- **Push a main**: Despliega automáticamente a producción
-- **Pull Request**: Crea un preview deploy para revisión
-- **Build automático**: Instala dependencias, ejecuta tests y construye el proyecto
+- **Push a main**: Despliega automáticamente a producción.
 
 ## 📁 Estructura del Proyecto
 
@@ -99,11 +110,6 @@ Para modificar el contenido, edita los componentes correspondientes en la carpet
 
 ### Imágenes
 Las imágenes se cargan desde Pexels. Para cambiarlas, reemplaza las URLs en los componentes.
-
-## 📱 Contacto
-
-- **WhatsApp**: +54 9 11 2253-1240
-- **Dirección**: Agüero 2476, Rafael Calzada, Buenos Aires
 
 ## 🤝 Contribuir
 
